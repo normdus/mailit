@@ -86,8 +86,8 @@ Rails.application.configure do
     domain: "nduchene.info",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: ENV["GMAIL_USERNAME"],
-    password: ENV["GMAIL_PASSWORD"]
+    user_name: "normdus",
+    password: "norm3488"
   }
   config.action_mailer.default_url_options = { host: "careerfoundry-nmdcfrails.c9users.io" }
 

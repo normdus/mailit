@@ -83,12 +83,10 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address: "smtp.sendgrid.net",
     port: 587,
-    domain: "nduchene.info",
+    domain: 'heroku.com',
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: "normdus",
-    password: "norm3488"
+    user_name: ENV['SENDGRID_USERNAME'],
+    password: ENV['SENDGRID_PASSWORD']
   }
-  config.action_mailer.default_url_options = { host: "careerfoundry-nmdcfrails.c9users.io" }
-
 end
